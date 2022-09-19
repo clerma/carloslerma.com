@@ -1,0 +1,16 @@
+---
+#layout: compress.html
+---
+{%- assign heroClass = site.hero -%}
+{%- if heroClass == nil -%}
+    {%- assign heroClass = ' image' -%}
+    {% else %}
+    {%- assign heroClass = site.hero | append: " " -%}
+{%- endif -%}
+<html lang='en'>
+    {% include head.html %}
+    <body class="{{ page.bodyClass }} {{ heroClass }}">
+        {{ content }}
+        {% include scripts.html %}
+    </body>
+</html>

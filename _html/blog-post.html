@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliim - Personal Portfolio</title>
+
+    <!-- Material Icons Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Template Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simplebar.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Skin File -->
+    <link rel="stylesheet" href="css/skins/deeporange.css">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="amber" href="css/skins/amber.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="brown" href="css/skins/brown.css" />
+    <link rel="alternate stylesheet" type="text/css" title="cyan" href="css/skins/cyan.css" />
+    <link rel="alternate stylesheet" type="text/css" title="deeporange" href="css/skins/deeporange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="deeppurple" href="css/skins/deeppurple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="grey" href="css/skins/grey.css" />
+    <link rel="alternate stylesheet" type="text/css" title="indigo" href="css/skins/indigo.css" />
+    <link rel="alternate stylesheet" type="text/css" title="lightblue" href="css/skins/lightblue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="pink" href="css/skins/pink.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="teal" href="css/skins/teal.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.js"></script>
+</head>
+<body class="dark" data-layout="post">
+<div id="wrapper" data-simplebar data-page>
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="" data-include="switcher">
+        <div class="content-switcher">
+            <h4>COLOR SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('amber');" title="amber" class="color"><img src="images/styleswitcher/amber.png" alt="amber" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="images/styleswitcher/blue.png" alt="blue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('brown');" title="brown" class="color"><img src="images/styleswitcher/brown.png" alt="brown" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('cyan');" title="cyan" class="color"><img src="images/styleswitcher/cyan.png" alt="cyan" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('deeporange');" title="deeporange" class="color"><img src="images/styleswitcher/deeporange.png" alt="deeporange" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('deeppurple');" title="deeppurple" class="deeppurple"><img src="images/styleswitcher/deeppurple.png" alt="deeppurple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="images/styleswitcher/green.png" alt="green" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('grey');" title="grey" class="color"><img src="images/styleswitcher/grey.png" alt="grey" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('indigo');" title="indigo" class="color"><img src="images/styleswitcher/indigo.png" alt="indigo" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('lightblue');" title="lightblue" class="color"><img src="images/styleswitcher/lightblue.png" alt="lightblue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('pink');" title="pink" class="color"><img src="images/styleswitcher/pink.png" alt="pink" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="images/styleswitcher/purple.png" alt="purple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="images/styleswitcher/red.png" alt="red" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('teal');" title="teal" class="color"><img src="images/styleswitcher/teal.png" alt="teal" /></a>
+                </li>
+            </ul>
+            <hr>
+            <h4>BODY SKIN</h4>
+
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark" checked="checked" /> Dark</label>
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Preloader Start -->
+    <div id="loader-wrapper" data-include="preloader">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Sections Starts -->
+    <!-- Single Post Starts -->
+    <div class="section blog-section" id="blog">
+        <div id="blog-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 post-container single-post-container">
+                        <a href="blog.html" class="link-blog"><span class="material-icons">keyboard_arrow_left</span> Back to Blog</a>
+                        <div class="meta d-inline-block">
+                            <span><span class="material-icons">person</span> admin</span>
+                            <span class="date"><span class="material-icons">date_range</span> 9 Nov 2021</span>
+                            <span><span class="material-icons">tag</span> html, css, javascript</span>
+                        </div>
+                        <img src="images/blog/blog-post-1.jpg" class="img-fluid" alt="Blog Post" />
+                        <h2 href="">Best WordPress Themes for Affiliate Marketing in 2020</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum...
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Single Post Ends -->
+    <!-- Sections Ends -->
+</div>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Only demo -->
+<script src="js/styleswitcher.js"></script>
+
+</body>
+</html>

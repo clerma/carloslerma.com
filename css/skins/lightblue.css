@@ -1,0 +1,62 @@
+/* =================================================================== */
+/* Light Blue #03a9f4
+====================================================================== */
+.main-btn,
+.main-btn:hover,
+.main-btn:focus,
+.item-title-hover,
+.item-title-hover .item-category,
+.contact-section .box > span,
+.post-date,
+.resume-item h6,
+.chart-bar>.percent,
+.about-section .arrow,
+.chart-bar>.item-progress,
+.social li a:hover,
+body.dark .social li a:hover,
+.badges span,
+.heading h2:after,
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+#navigation.is-fixed ul li a:before,
+.work-section .action--close>span:hover .navigation-close-line{
+    background-color: #03a9f4;
+}
+
+.btn.main-btn,
+.btn.main-btn:focus,
+.btn.main-btn:hover,
+.btn.second-btn,
+.contact-section input[type=text]:focus,
+.contact-section input[type=email]:focus,
+.contact-section textarea:focus,
+body.dark .contact-section input[type=text]:focus,
+body.dark .contact-section input[type=email]:focus,
+body.dark .contact-section textarea:focus{
+    border: 1px solid #03a9f4;
+}
+#navigation.is-fixed ul li a.active,
+#navigation.is-fixed ul li a:hover,
+.home-section .home-contact a,
+.home-section .hero-section h2 span,
+body.dark .home-section .hero-section h2 span,
+.btn.second-btn span,
+.about-section .resume-header p,
+.heading h2 span,
+.about-section .resume-header p.active,
+.about-section .resume-header p:hover,
+.meta > span span,
+.home-section .home-social .social li a:hover,
+body.image .home-section .home-social .social li a:hover,
+body.video .home-section .home-social .social li a:hover{
+    color: #03a9f4;
+}
+
+.right-dotted-shape,
+.badges:after{
+    background: radial-gradient(circle at center, #03a9f4 10%, transparent 20%), transparent;
+    background-size: 19px 18px;
+}
+.home-section .circles li {
+    background: rgba(3, 169, 244, .2)
+}

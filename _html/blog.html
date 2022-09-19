@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliim - Personal Portfolio</title>
+
+    <!-- Material Icons Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Template Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/simplebar.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Skin File -->
+    <link rel="stylesheet" href="css/skins/deeporange.css">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="amber" href="css/skins/amber.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="brown" href="css/skins/brown.css" />
+    <link rel="alternate stylesheet" type="text/css" title="cyan" href="css/skins/cyan.css" />
+    <link rel="alternate stylesheet" type="text/css" title="deeporange" href="css/skins/deeporange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="deeppurple" href="css/skins/deeppurple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="grey" href="css/skins/grey.css" />
+    <link rel="alternate stylesheet" type="text/css" title="indigo" href="css/skins/indigo.css" />
+    <link rel="alternate stylesheet" type="text/css" title="lightblue" href="css/skins/lightblue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="pink" href="css/skins/pink.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="teal" href="css/skins/teal.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.js"></script>
+</head>
+<body class="dark" data-layout="blog">
+<div id="wrapper" data-simplebar data-page>
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="" data-include="switcher">
+        <div class="content-switcher">
+            <h4>COLOR SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('amber');" title="amber" class="color"><img src="images/styleswitcher/amber.png" alt="amber" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="images/styleswitcher/blue.png" alt="blue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('brown');" title="brown" class="color"><img src="images/styleswitcher/brown.png" alt="brown" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('cyan');" title="cyan" class="color"><img src="images/styleswitcher/cyan.png" alt="cyan" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('deeporange');" title="deeporange" class="color"><img src="images/styleswitcher/deeporange.png" alt="deeporange" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('deeppurple');" title="deeppurple" class="deeppurple"><img src="images/styleswitcher/deeppurple.png" alt="deeppurple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="images/styleswitcher/green.png" alt="green" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('grey');" title="grey" class="color"><img src="images/styleswitcher/grey.png" alt="grey" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('indigo');" title="indigo" class="color"><img src="images/styleswitcher/indigo.png" alt="indigo" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('lightblue');" title="lightblue" class="color"><img src="images/styleswitcher/lightblue.png" alt="lightblue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('pink');" title="pink" class="color"><img src="images/styleswitcher/pink.png" alt="pink" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="images/styleswitcher/purple.png" alt="purple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="images/styleswitcher/red.png" alt="red" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('teal');" title="teal" class="color"><img src="images/styleswitcher/teal.png" alt="teal" /></a>
+                </li>
+            </ul>
+            <hr>
+            <h4>BODY SKIN</h4>
+
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark" checked="checked" /> Dark</label>
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" /> Light</label>
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Preloader Start -->
+    <div id="loader-wrapper" data-include="preloader">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Sections Starts -->
+    <!-- Blog Section Starts -->
+    <div class="section blog-section" id="blog">
+        <div id="blog-content">
+            <!-- Heading Starts -->
+            <div class="heading text-left text-md-center">
+                <h2>
+                    my <span>blog</span>
+                </h2>
+            </div>
+            <!-- Heading Ends -->
+            <!-- Blog Posts Starts -->
+            <div class="container">
+                <div class="row">
+                    <!-- Single Post Starts -->
+                    <div class="col-12 post-container">
+                        <div class="post-thumb">
+                            <a href="blog-post.html" class="d-block">
+                                <img src="images/blog/blog-post-1.jpg" class="img-fluid" alt="Blog Post" />
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date d-none d-sm-flex">
+                                <span>15</span>
+                                <span>NOV</span>
+                            </div>
+                            <div class="entry-header">
+                                <a href="blog-post.html">Best WordPress Themes for Affiliate Marketing in 2020</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam
+                                    nonumy eirmod tempor invidunt ut labore...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Post Ends -->
+                    <!-- Single Post Starts -->
+                    <div class="col-12 post-container">
+                        <div class="post-thumb">
+                            <a href="blog-post.html" class="d-block">
+                                <img src="images/blog/blog-post-2.jpg" class="img-fluid" alt="Blog Post" />
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date d-none d-sm-flex">
+                                <span>23</span>
+                                <span>JAN</span>
+                            </div>
+                            <div class="entry-header">
+                                <a href="blog-post.html">Top 7 Fullstack Development Trends To Follow In 2021</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam
+                                    nonumy eirmod tempor invidunt ut labore...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Post Ends -->
+                    <!-- Single Post Starts -->
+                    <div class="col-12 post-container">
+                        <div class="post-thumb">
+                            <a href="blog-post.html" class="d-block">
+                                <img src="images/blog/blog-post-3.jpg" class="img-fluid" alt="Blog Post" />
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-date d-none d-sm-flex">
+                                <span>04</span>
+                                <span>DEC</span>
+                            </div>
+                            <div class="entry-header">
+                                <a href="blog-post.html">6 Tools You Can Use For Marketing Outside Social Media</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam
+                                    nonumy eirmod tempor invidunt ut labore...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Post Ends -->
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="btn main-btn allposts"><span>load more</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Posts Ends -->
+        </div>
+    </div>
+    <!-- Blog Section Ends -->
+    <!-- Sections Ends -->
+</div>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Only demo -->
+<script src="js/styleswitcher.js"></script>
+
+</body>
+</html>

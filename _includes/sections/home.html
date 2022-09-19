@@ -1,0 +1,30 @@
+<!-- Home Section Starts -->
+<div class="home-section" id="home">
+    <div class="home-content">
+    {% if site.hero == 'video' %}
+        {%- include heros/video.html -%}
+    {% elsif site.hero == 'animated' %}
+        {%- include heros/animated.html -%}
+    {% else %}
+        {%- include heros/image.html -%}
+    {% endif %}
+    <!-- Social Media Starts -->
+    <div class="home-social d-none d-sm-block">
+        <ul class="social list-unstyled d-flex m-0">
+            {%- for social in site.socials -%}
+            <li class="{{ social.name }}"><a title="{{ social.name }}" href="{{ social.link }}"><i class="fa fa-{{ social.name }}"></i></a></li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <!-- Social Media Ends -->
+    <!-- Home Contact Starts -->
+    <div class="home-contact d-none d-sm-block">
+        <p>
+            {{ site.home.quick_contact_txt }}
+            <a class="d-block" href="mailto:{{ site.home.email }}">{{ site.home.email }}</a>
+            <span>{{ site.home.phone }}</span>
+        </p>
+    </div>
+    <!-- Home Contact Ends -->
+    </div>
+</div>

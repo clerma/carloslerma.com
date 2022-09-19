@@ -1,0 +1,61 @@
+<div class="section work-section" id="work">
+    <div id="work-content">
+        <!-- Heading Starts -->
+        <div class="heading text-left text-md-center">
+            <h2>
+                {{ site.work.title }}
+            </h2>
+        </div>
+        <!-- Heading Ends -->
+        <div class="container portfolio-container">
+            <!-- Portfolio Items Starts -->
+            <div class="grid row w-100 m-0 text-left">
+                <div class="item-title-hover"></div>
+                {%- for item in site.portfolios -%}
+                <!-- Portfolio Item Starts -->
+                <div class="grid__item col-12 col-md-6 col-lg-4" data-size="{{item.size }}">
+                    <a class="d-block" href="{{ item.image | relative_url }}" data-title="{{item.title }}" data-category="{{item.category }}">
+                        <!-- &uml;Project Main Image Starts -->
+                        <img class="img-fluid" src="{{  item.image  | relative_url }}" alt="{{item.title }}">
+                        <!-- &uml;Project Main Image Ends -->
+                        <!-- &uml;Project Details Starts -->
+                        <div class="description description--grid">
+                            <h3>{{item.title }}</h3>
+                            <div class="details">
+                                <ul class="list-unstyled">
+                                    {{item.description }}
+                                </ul>
+                                <!-- Project Preview Desktop Link Starts -->
+                                <span class="btn main-btn d-none d-md-inline-block" onclick="window.open('{{item.url}}')">
+                                    <span>preview</span>
+                                </span>
+                                <!-- Project Preview Desktop Link Ends -->
+                            </div>
+                        </div>
+                        <!-- Project Details Ends -->
+                    </a>
+                    <!-- Project Preview Mobile Link Starts -->
+                    <span class="btn main-btn d-inline-block d-md-none" onclick="window.open('{{item.url}}')">
+                            <span>preview</span>
+                        </span>
+                    <!-- Project Preview Mobile Link Ends -->
+                </div>
+                <!-- Portfolio Item Ends -->
+                {%- endfor -%}
+                
+            </div>
+            <!-- Portfolio Items Ends -->
+            <!-- &uml;Close Portfolio Item Starts -->
+            <div class="preview">
+                <button class="action action--close">
+                        <span class="position-relative d-block">
+                            <span class="navigation-close-line"></span>
+                            <span class="navigation-close-line"></span>
+                        </span>
+                </button>
+                <div class="description description--preview"></div>
+            </div>
+            <!-- &uml;Close Portfolio Item Ends -->
+        </div>
+    </div>
+</div>

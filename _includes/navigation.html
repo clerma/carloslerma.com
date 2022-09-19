@@ -1,0 +1,14 @@
+<div id="navigation" class="is-fixed" data-include="navigation">
+    <a href="#" class="navigation-trigger">Menu<span></span></a>
+    <nav id="main-navigation">
+        <ul>
+            {%- for nav in site.navigation -%}
+            <li>
+                <a href="{{nav.link}}" class="link-page link-home{%- if forloop.first -%}{{" active"}}{%- endif -%}">
+                    <span class="material-icons">{{nav.icon}}</span>{{nav.name}}
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+</div>
