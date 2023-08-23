@@ -4,7 +4,7 @@ title: 6 Tools You Can Use For Marketing Outside Social Media
 date: 2021-05-20 01:48
 tags: []
 image: 'images/blog/blog-post-1.jpg'
-summary: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
+summary: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
 ---
 
 

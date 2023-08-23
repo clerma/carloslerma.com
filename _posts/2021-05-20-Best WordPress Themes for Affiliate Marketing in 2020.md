@@ -4,7 +4,7 @@ title: Best WordPress Themes for Affiliate Marketing in 2020
 date: 2021-05-20 01:46
 tags: []
 image: 'images/blog/blog-post-2.jpg'
-summary: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
+summary: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore dolor sit amet, consetetur diam nonumy eirmod tempor invid sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
 ---
 
 
