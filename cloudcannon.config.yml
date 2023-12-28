@@ -1,0 +1,327 @@
+paths:
+  uploads: uploads
+  dam_uploads: ''
+  static: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  posts:
+    path: _posts
+    output: true
+    icon: notes
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+_select_data:
+  navigation:
+    - name: home
+      link: '#home'
+      icon: home
+    - name: about
+      link: '#about'
+      icon: article
+    - name: portfolio
+      link: '#work'
+      icon: cases
+    - name: contact
+      link: '#contact'
+      icon: email
+    - name: blog
+      link: '#blog'
+      icon: topic
+  home:
+    athor_name: hi ! i’m<span> Daniel.</span>
+    description: I'm a Freelance UI/UX Designer and Developer based in London, England.
+    button_text: more about me
+    quick_contact_txt: Let's work together
+    email: contact@daniel.net
+    phone: +216 21 184 010 32
+  about:
+    title: |
+
+      about <span>me</span>
+    author_image: images/man.jpg
+    birthdate: June 1990
+    nationality: British
+    experience: 8 years
+    phone: +34 18 40 10
+    address: London, UK
+    email: daniel@mail.com
+    description: >
+
+      I'm Daniel Martin, british based web designer and front‑end developer
+      living in London focused on crafting clean, creative and user‑friendly
+      experiences, I build beautiful and powerful websites and android
+      applications.
+    download-cv_text: download my cv
+  resume:
+    title: My resume
+    experience-text: experience
+    education-text: education
+  work:
+    title: |
+
+      my <span>portfolio</span>
+  contact:
+    title: |
+
+      get <span>in touch</span>
+    phone: +216 21 184 010
+    email: daniel@mail.com
+    location_on: London, England
+    tagline: send me an email
+    description: >-
+      Feel free to get in touch with me. I am always open to discussing new
+      projects or creative ideas.
+  blog:
+    title: |
+
+      latest <span>posts</span>
+  experiences:
+    - title: Web Developer
+      date: 2018 - now
+      company: Adobe
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Designer
+      date: 2014 - 2018
+      company: Twitter
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Consultant
+      date: 2006 - 2014
+      company: Facebook
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Professor
+      date: 2010 - 2014
+      company: Envato
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Engineer
+      date: 2006 - 2010
+      company: Google
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Writer
+      date: 2006 - 2010
+      company: IBM
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Internship
+      date: 2005 - 2010
+      company: Yahoo
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+  education_history:
+    - title: Engineering Degree
+      date: 2015
+      institute: Oxford University
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Master Degree
+      date: 2012
+      institute: Moscow University
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Bachelor Degree
+      date: 2009
+      institute: Tunis High School
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: Tech Degree
+      date: 2007
+      institute: Paris High School
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: College Degree
+      date: 2005
+      institute: Berlin High School
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: High School Degree
+      date: 2003
+      institute: Tokyo High School
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+    - title: School Degree
+      date: 2001
+      institute: Madrid High School
+      description: >-
+        Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus
+        sollicitudin sed suscipit.
+  experience_short_info:
+    experience: 13
+    projects: 56
+    customers: 89
+  skills:
+    - name: HTML
+      percent: 80
+    - name: CSS
+      percent: 60
+    - name: WORDPRESS
+      percent: 90
+    - name: JQUERY
+      percent: 70
+    - name: JAVSCRIPT
+      percent: 70
+    - name: PHP
+      percent: 57
+    - name: DRUPAL
+      percent: 80
+    - name: REACT
+      percent: 50
+  portfolios:
+    - image: images/projects/4.jpg
+      category: mobile application
+      title: Autumn Papers
+      size: 960x640
+      description: >-
+        <li> <span>Project : </span> <span>mobile application</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/1.jpg
+      category: website design
+      title: Globe
+      size: 793x1080
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/3.jpg
+      category: colored pens
+      title: Photo Shooting
+      size: 718x1080
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/8.jpg
+      category: 3d Object
+      title: woman bag
+      size: 716x1080
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/5.jpg
+      category: After Effect Video
+      title: halloween
+      size: 960x640
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/2.jpg
+      category: Water Project
+      title: Bottle
+      size: 960x1440
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/7.jpg
+      category: Relaxing chairs
+      title: Sofa
+      size: 960x1440
+      description: >-
+        <li> <span>Project : </span> <span>Relaxing chairs</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+    - image: images/projects/6.jpg
+      category: mobile application
+      title: Beautiful cat
+      size: 960x638
+      description: >-
+        <li> <span>Project : </span> <span>Website Design</span></li><li>
+        <span>Client : </span> <span>Envato</span></li><li> <span>Langages :
+        </span> <span>html, css, js</span></li><li> <span>Duration : </span>
+        <span>3 months</span></li><li> <span>Bugdet : </span>
+        <span>$33000</span></li>
+      url: '#'
+  socials:
+    - name: facebook
+      link: '#'
+    - name: twitter
+      link: '#'
+    - name: linkedin
+      link: '#'
+    - name: dribbble
+      link: '#'
+    - name: instagram
+      link: '#'
+  jekyll-archives:
+    layout: archive
+    enabled: []
+    permalinks:
+      year: /:year/
+      month: /:year/:month/
+      day: /:year/:month/:day/
+      tag: /tag/:name/
+      category: /category/:name/
+  archives: []
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
