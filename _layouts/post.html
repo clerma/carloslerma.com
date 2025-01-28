@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+{% if page.author == nil %}
+	{% assign author = site.author %}
+{% else %}
+	{% assign author = page.author %}
+{% endif %}
+
+{% assign blog_url = 'blog/' %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<!-- titles -->
+				<div class="m-titles">
+					<h1 class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+						{{ page.title }}
+					</h1>
+					<div class="m-category scrolla-element-anim-1 scroll-animate" data-animate="active">
+						{% assign cat_size = page.category | size %}
+						{% if cat_size != 0 %}
+							{% for category in page.category %}
+							<a href="{{ '/categories' | relative_url }}/{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category }}</a>{% if page.category.last != category and page.category.last != nil %},{% endif %}
+							{% endfor %}
+						{% endif %}
+						/ {{ page.date | date: site.date_format }}
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Single Post -->
+<section class="section section-inner m-archive">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+				<!-- image -->
+				<div class="m-image-large">
+					<div class="image">
+						{% if page.full_image != nil %}
+						<div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url({{ page.full_image | relative_url }});"></div>
+						{% else %}
+						<div class="img scrolla-element-anim-1 scroll-animate" data-animate="active" style="background-image: url({{ page.image | relative_url }});"></div>
+						{% endif %}
+					</div>
+				</div>
+
+				<!-- content -->
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+
+						{{ page.content }}
+
+						<div class="social-share" data-title="{{ page.title }}" data-url="{{ page.url | absolute_url }}">
+							<span>{{ ui_text.share }}:</span>
+							<a class="share-btn share-btn-facebook share-btn-1" title="{{ ui_text.share_on }} Facebook">
+									<i class="fab fa-facebook"></i>
+							</a>
+							<a class="share-btn share-btn-twitter share-btn-2" title="{{ ui_text.share_on }} Twitter">
+									<i class="fab fa-twitter"></i>
+							</a>
+							<a class="share-btn share-btn-linkedin share-btn-3" title="{{ ui_text.share_on }} Linkedin">
+									<i class="fab fa-linkedin"></i>
+							</a>
+							<a class="share-btn share-btn-reddit share-btn-4" title="{{ ui_text.share_on }} Reddit">
+									<i class="fab fa-reddit"></i>
+							</a>
+							<a class="share-btn share-btn-pinterest share-btn-5" title="{{ ui_text.share_on }} Pinterest">
+									<i class="fab fa-pinterest"></i>
+							</a>
+						</div>
+
+						<div class="byline">
+							{{ ui_text.by }} <span class="author">{{ author }}</span>
+						</div>
+
+						{% assign tags_size = page.tags | size %}
+						{% if tags_size != 0 %}
+						<div class="tags-links">
+							<span>{{ ui_text.tags }}:</span>
+							{% for tag in page.tags %}
+							<a href="{{ '/tags' | relative_url }}/{{ tag | downcase | url_escape | strip | replace: ' ', '-' }}" rel="tag">{{- tag -}}</a>
+							{% endfor %}
+						</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+
+			{% if site.disqus_comments == 'yes' %}
+			<!-- Comments -->
+			<div class="comments-post scrolla-element-anim-1 scroll-animate" data-animate="active">
+				<div class="section__comments">
+
+					<div class="m-titles">
+						<div class="m-title align-left">{{ ui_text.comments }}</div>
+					</div>
+
+					<div class="comments">
+						<div id="disqus_thread"></div>
+
+						{% if site.disqus_shortname %}
+							<script>
+								var disqus_config = function () {
+									this.page.url = "{{ page.url | absolute_url }}";  /* Replace PAGE_URL with your page's canonical URL variable */
+									this.page.identifier = "{{ page.id }}"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+								};
+								(function() { /* DON'T EDIT BELOW THIS LINE */
+									var d = document, s = d.createElement('script');
+									s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+									s.setAttribute('data-timestamp', +new Date());
+									(d.head || d.body).appendChild(s);
+								})();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						{% endif %}
+					</div>
+
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</section>
+
+
+{% if page.previous.url or page.next.url %}
+<!-- Navigation -->
+<section class="m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="h-titles h-navs">
+					{% if page.previous.url %}
+					<a href="{{ page.previous.url | relative_url }}">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-animate="active">
+							{{ ui_text.prev }}
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							{{ page.previous.title }}
+						</span>
+					</a>
+					{% else %}
+					<a href="{{ page.next.url | relative_url }}">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-animate="active">
+							{{ ui_text.next }}
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							{{ page.next.title }}
+						</span>
+					</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}

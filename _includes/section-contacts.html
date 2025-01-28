@@ -1,0 +1,56 @@
+{% assign content = site.data.content['contacts'] %}
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<section class="section section-bg section-parallax-2" id="contact-section">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="m-titles">
+      <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">{{ content.title }}</h2>
+    </div>
+
+    <div class="row row-custom">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 align-right">
+
+        <!-- Section numbers -->
+        <div class="numbers-items contacts-items">
+          {% for item in content.list %}
+          <div class="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+            <div class="icon">
+              <i aria-hidden="true" class="{{ item.icon }}" title="{{ item.label }}"></i>
+            </div>
+            <div class="num">{{ item.value }}</div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+        <!-- contact form -->
+        <div class="contacts-form scrolla-element-anim-1 scroll-animate" data-animate="active">
+          <form id="cform" action="https://formsubmit.io/send/{{ site.formsubmit_email }}" method="post">
+            <label>
+              {{ ui_text.full_name }}
+              <input type="text" name="name" placeholder="{{ ui_text.your_full_name }}" />
+            </label>
+            <label>
+              {{ ui_text.email_address }}
+              <input type="email" name="email" placeholder="{{ ui_text.your_email_address }}" />
+            </label>
+            <label>
+              {{ ui_text.message }}
+              <textarea name="message" placeholder="{{ ui_text.your_message }}"></textarea>
+            </label>
+            <button type="submit" class="btn">{{ ui_text.send_message }}</button>
+          </form>
+        </div>
+        <div class="alert-success" style="display: none;">
+          <p>Thanks, your message is sent successfully.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

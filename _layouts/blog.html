@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!-- titles -->
+        <div class="h-titles">
+          <h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.title }}</h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-inner m-archive">
+  <div class="container">
+
+    <div class="row row-custom">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+        <!-- Description -->
+        <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+          <h6>{{ ui_text.blog_subtitle }}</h6>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Blog -->
+  <div class="blog-items">
+    {% for post in paginator.posts %}
+    <div class="archive-item">
+      <div class="image">
+        <a href="{{ post.url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+        </a>
+      </div>
+      <div class="desc">
+        <div class="category scrolla-element-anim-1 scroll-animate" data-animate="active">
+          {% if post.category.first != nil %}
+            {{ post.category.first }}
+          {% else %}
+            {{ post.category }}
+          {% endif %}
+          <br/><span>{{ post.date | date: site.date_format }}</span>
+        </div>
+        <div class="title scrolla-element-anim-1 scroll-animate" data-animate="active">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+          {{ post.excerpt }}
+          <div class="readmore">
+            <a href="{{ post.url }}" class="lnk">{{ ui_text.read_more }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  {% if paginator.total_pages > 1 %}
+  <div class="pager">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="page-numbers prev"><i class="icon-arrow"></i></a>
+    {% else %}
+      <span class="page-numbers prev"><i class="icon-arrow"></i></span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="page-numbers current">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}" class="page-numbers">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-numbers">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="page-numbers next"><i class="icon-arrow"></i></a>
+    {% else %}
+      <span class="page-numbers next"><i class="icon-arrow"></i></span>
+    {% endif %}
+  </div>
+  {% endif %}
+
+</section>

@@ -1,0 +1,266 @@
+# Sections content configuration file
+##
+### use navigation.yml file to re-order, delete or add section of each card
+### here you can find all content in all pre-build sections
+
+### Hero [ hero-image ]
+hero:
+  image: "assets/img/profile.png"
+  image_alt: "Federico Ober"
+  title: "Carlos <br>Lerma"
+  subtitle: "ENTREPRENEUR DESIGNER"
+  description: "I\"m a UI/UX Designer based in NewYork and enjoy playing with colors. I love travelling, photography &amp; music."
+  info:
+    - label: "Born in"
+      value: "NewYork"
+
+    - label: "Experience"
+      value: "7+ Years"
+
+    - label: "Date of Birth"
+      value: "27 June 1992"
+
+### About [ about ]
+about:
+  title: "About Me"
+  text: "
+  <p>
+    My name is Federico Ober. I have been studying UI UX Design since October 2020. I like creating
+    a cool design project.</p><p>Donec imperdiet risus at tortor consequat maximus et eget magna.
+    Cras ornare sagittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel
+    bibendum ultrices, fringilla vel eros. Donec euismod leo lectus, et euismod metus euismod sed.
+    Quisque quis suscipit ipsum, at pellentesque velit. Duis a congue sem.
+  </p>
+  <p>
+    In sed dolor ut ligula malesuada sollicitudin. Morbi iaculis convallis arcu, nec maximus tellus
+    sodales in. Curabitur blandit enim at nisl lobortis, non pretium enim hendrer
+  </p>
+  "
+  list:
+    - label: "Completed <br>Project"
+      icon: "far fa-check-circle"
+      value: "124"
+
+    - label: "Happy <br>Clients"
+      icon: "far fa-smile-beam"
+      value: "65"
+
+    - label: "Awards <br>Won"
+      icon: "far fa-gem"
+      value: "18"
+
+  button:
+    text: "Contact Me"
+    link: "#contact-section"
+
+  signature:
+    image: "assets/img/signature.png"
+    alt: ""
+
+### Resume [ resume ]
+resume:
+  title: "My Resume"
+  text: "
+  <p>
+    Talented UX designer with 7+ years of experience, seeking to elevate UI/UX at ABC, Inc.
+    As Lead UI/UX Head completed project before dead line. ittis augue, id sollicitudin justo
+    tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euism
+    od leo um, at pellentesque velituis a congue sem.
+  </p>
+  "
+
+  skills:
+    title: "Skills"
+    items:
+      - label: "Photoshop"
+        dots: "9" #0-10 progress in dots
+        value: "90" #0-100 progress in %
+
+      - label: "WordPress"
+        dots: "6" #0-10 progress in dots
+        value: "60" #0-100 progress in %
+
+      - label: "HTML"
+        dots: "8" #0-10 progress in dots
+        value: "80" #0-100 progress in %
+
+      - label: "Java"
+        dots: "5" #0-10 progress in dots
+        value: "50" #0-100 progress in %
+
+      - label: "jQuery"
+        dots: "7" #0-10 progress in dots
+        value: "70" #0-100 progress in %
+
+  services:
+    title: "Services"
+    items:
+      - icon: "fab fa-chrome"
+        name: "Web development"
+        text: "<p>Modern and mobile-ready website that will help you reach all of your marketing.</p>"
+        button: "order now"
+        link: "#contact-section"
+
+      - icon: "fab fa-soundcloud"
+        name: "Music writing"
+        text: "<p>Music copying, writing, creating, transcription and composition services.</p>"
+        button: "order now"
+        link: "#contact-section"
+
+      - icon: "fab fa-adversal"
+        name: "Advetising"
+        text: "<p>Advertising services include television, radio, print, mail, and web apps.</p>"
+        button: "order now"
+        link: "#contact-section"
+
+      - icon: "fas fa-gamepad"
+        name: "Game Development"
+        text: "<p>Developing memorable and unique mobile android, ios and video games.</p>"
+        button: "order now"
+        link: "#contact-section"
+
+  history1:
+    - title: "EDUCATION"
+      items:
+        - date: "2010 - 2012"
+          name: "Master in Graphic"
+          text: "New York University"
+
+        - date: "2006 - 2009"
+          name: "Bachelors of FineArt"
+          text: "New York University"
+
+    - title: "AWARDS"
+      items:
+        - date: "2016 - awwwards"
+          name: "Site of the Day"
+          text: "<p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>"
+
+        - date: "2015 - designnominees"
+          name: "Site of the Week"
+          text: "<p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>"
+
+  history2:
+    - title: "EXPERIENCE"
+      items:
+        - date: "2014 - Present"
+          name: "Soft Tech Inc."
+          subname: "UI Head &amp; Manager"
+          text: "<p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>"
+
+        - date: "2010 - 2014"
+          name: "Kana Design Studio"
+          subname: "UI / UX Specialist"
+          text: "<p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>"
+
+        - date: "2009 - 2010"
+          name: "Paperart"
+          subname: "Graphic Designer"
+          text: "<p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod leo lectus.</p>"
+
+  button:
+    text: "Download CV"
+    link: "https://bslthemes.site/ober/wp-content/uploads/2021/12/Jacky-Smith-Resume.pdf"
+
+### Pricing [ pricing ]
+pricing:
+  title: "Pricing Plans"
+  text: "<p>Are you interested to work with me ? Here are my price list for design related work. Lets talk about project !</p>"
+  items:
+    - name: "Full Time"
+      subname: "Available for Full Time"
+      price: "$1200"
+      list:
+        - value: "Web Development"
+        - value: "Advertising"
+        - value: "Web Development"
+        - value: "Photography"
+      button: "Hire Me"
+      link: "#contact-section"
+
+    - name: "Project Wise"
+      subname: "Available for Freelancing"
+      price: "$400"
+      list:
+        - value: "Web Development"
+        - value: "Advertising"
+        - value: "Web Development"
+        - value: "Photography"
+      button: "Hire Me"
+      link: "#contact-section"
+
+    - name: "Hourley"
+      subname: "Available for Hourley Basis"
+      price: "$30"
+      list:
+        - value: "Web Development"
+        - value: "Advertising"
+        - value: "Web Development"
+        - value: "Photography"
+      button: "Hire Me"
+      link: "#contact-section"
+
+### Testimonials [ testimonials ]
+testimonials:
+  items:
+    - image: "assets/img/team3.jpg"
+      name: "Jennifer Smith"
+      role: "CEO &amp; Founder"
+      text: "<p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>"
+
+    - image: "assets/img/team3.jpg"
+      name: "James Green"
+      role: "Art Director"
+      text: "<p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>"
+
+    - image: "assets/img/team3.jpg"
+      name: "Joseph Mackey"
+      role: "Architect"
+      text: "<p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum, velit enim finibus mauris, in volutpat arcu magna ac metus. Sed condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>"
+
+### Clients [ clients ]
+clients:
+  title: "My Clients"
+  text: "<p>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.</p>"
+  items:
+    - image: "assets/img/brands/brand1.png"
+      title: "bslthemes"
+
+    - image: "assets/img/brands/brand2.png"
+      title: "bslthemes"
+
+    - image: "assets/img/brands/brand3.png"
+      title: "bslthemes"
+
+    - image: "assets/img/brands/brand4.png"
+      title: "bslthemes"
+
+### Contact [ contacts ]
+contacts:
+  title: "Contact Me"
+  list:
+    - label: "Phone"
+      icon: "fas fa-phone"
+      value: "+1 023-456-7800"
+
+    - label: "Email"
+      icon: "fas fa-at"
+      value: "hi.ober@bslthemes.com"
+
+    - label: "Address"
+      icon: "fas fa-location-arrow"
+      value: "43rd Street River Point NY 1023"
+
+### Blog [ blog ]
+#items generates from dir /_posts/*
+blog:
+  title: "My Blog"
+  text: "<p>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam ut aliquet felis, sit amet imperdiet felis.</p>"
+  button: "View Blog"
+  link: "blog/"
+
+### Portfolio [ portfolio ]
+#items generates from dir /_works/*
+portfolio:
+  title: "My Projects"
+  text: "<p>A Collection of my favorites project I’ve designed recently. Feeling great while sharing here.</p>"

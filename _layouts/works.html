@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+{% assign categories = site.data.settings['portfolio'] %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!-- titles -->
+        <div class="h-titles">
+          <h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.title }}</h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section Works -->
+<section class="section section-inner m-archive">
+  <div class="container">
+
+    <div class="row row-custom">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+        <!-- Description -->
+        <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+          <h6>{{ ui_text.works_subtitle }}</h6>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!-- Works -->
+        <div class="works-box">
+
+          <div class="filter-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+            <a href="#" class="active" data-href=".works-col">{{ ui_text.all }}</a>
+            {% for category in categories.filters %}
+            <a href="#" data-href=".sorting-{{ category.slug }}">{{ category.name }}</a>
+            {% endfor %}
+          </div>
+
+          <div class="works-items works-masonry-items row">
+            {% for work in site.works %}
+            <div class="works-col col-xs-12 col-sm-12 col-md-12 col-lg-6 sorting-{{ work.category_slug }}">
+              <div class="works-item">
+                <a href="{{ work.url }}">
+                  <span class="image scrolla-element-anim-1 scroll-animate" data-animate="active">
+                    <span class="img">
+                      <img src="{{ work.image | relative_url }}" alt="{{ work.title }}" />
+                      <span class="overlay"></span>
+                    </span>
+                  </span>
+                  <span class="desc">
+                    <span class="name splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+                      {{ work.title }}
+                    </span>
+                    <span class="category scrolla-element-anim-1 scroll-animate" data-animate="active">
+                      {{ work.category }}
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

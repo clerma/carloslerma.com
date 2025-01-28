@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<!-- titles -->
+				<div class="h-titles">
+					<h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.title }}</h1>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% if page.content != '' %}
+<!-- Single Post -->
+<section class="section section-inner m-archive">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<!-- content -->
+				<div class="description">
+					<div class="post-content scrolla-element-anim-1 scroll-animate" data-animate="active">
+						{{ page.content }}
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+{% endif %}

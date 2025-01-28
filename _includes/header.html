@@ -1,0 +1,76 @@
+{% assign navigation = site.data.navigation['main'] %}
+{% assign header = site.data.settings['header'] %}
+{% assign social = site.data.settings['social'] %}
+{% assign page_url = page.url | absolute_url %}
+
+<!-- Header -->
+<header class="header">
+	<div class="header__builder">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+				<!-- logo -->
+				<div class="logo">
+					<a href="{{ site.url }}">
+						<img src="{{ header.logo.image | relative_url }}" alt="{{ header.logo.alt }}" />
+					</a>
+				</div>
+
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
+
+
+				<!-- menu btn -->
+				<a href="#" class="menu-btn"><span></span></a>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Menu Full Overlay -->
+	<div class="menu-full-overlay">
+		<div class="menu-full-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+						<!-- menu full -->
+						<div class="menu-full">
+							<ul class="menu-full">
+								{% for nav in navigation %}
+								{% assign nav_url = nav.url | absolute_url %}
+								<li class="menu-item{% if page_url == nav_url %} current-menu-item{% endif %}{% if nav.parent == 1 %} menu-item-has-children has-children{% endif %}">
+									<a class="splitting-text-anim-2" data-splitting="chars" href="{{ nav.url | relative_url }}">{{ nav.title }}</a>
+									{% if nav.parent == 1 %}
+									<ul class="sub-menu">
+										{% for subnav in nav.childs %}
+										{% assign subnav_url = subnav.url | absolute_url %}
+										<li class="menu-item{% if page_url == subnav_url %} current-menu-item{% endif %}">
+											<a class="splitting-text-anim-1" data-splitting="chars" href="{{ subnav.url | relative_url }}">{{ subnav.title }}</a>
+										</li>
+										{% endfor %}
+									</ul>
+									{% endif %}
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- social -->
+		<div class="menu-social-links">
+			{% for link in social %}
+			{% assign link_url = link.url | absolute_url %}
+			<a href="{{ link.url | relative_url }}" target="blank" class="scrolla-element-anim-1" title="{{ link.name }}">
+				<i class="{{ link.icon }}"></i>
+			</a>
+			{% endfor %}
+		</div>
+
+	</div>
+
+</header>

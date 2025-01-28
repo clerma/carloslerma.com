@@ -1,0 +1,35 @@
+{% assign content = site.data.content['clients'] %}
+
+<section class="section section-parallax-5">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="m-titles">
+      <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">{{ content.title }}</h2>
+    </div>
+
+    <div class="row row-custom">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+        <!-- Description -->
+        <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+          {{ content.text }}
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row clients-items">
+      {% for item in content.items %}
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 align-center">
+        <div class="clients-item">
+          <img src="{{ item.image | relative_url }}" title="{{ item.title }}" alt="{{ item.title }}" />
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign sections = page.sections | split: "," %}
+
+{% for section in sections %}
+	{% include section-{{ section }}.html %}
+{% endfor %}

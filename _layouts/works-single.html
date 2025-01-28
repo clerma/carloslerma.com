@@ -1,0 +1,167 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+{% if page.author == nil %}
+	{% assign author = site.author %}
+{% else %}
+	{% assign author = page.author %}
+{% endif %}
+
+{% assign blog_url = 'blog/' %}
+
+<!-- Section Started Heading -->
+<section class="section section-inner started-heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<!-- titles -->
+				<div class="h-titles">
+					<h1 class="h-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.title }}</h1>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Details -->
+<section class="section section-inner details">
+	<div class="container">
+		<div class="row row-custom">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+				<div class="m-details">
+					{% for info in page.info %}
+					<div class="details-label">
+						<span>{{ info.label }}</span>
+						<strong>{{ info.value }}</strong>
+					</div>
+					{% endfor %}
+					<div class="details-label">
+						<span>{{ ui_text.categories }}</span>
+						<strong>{{ page.category }}</strong>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% if page.full_image != nil %}
+<!-- Image Large -->
+<section class="m-image-large scrolla-element-anim-1 scroll-animate" data-animate="active">
+	<div class="image">
+		<div class="img js-parallax" style="background-image: url({{ page.full_image | relative_url }});"></div>
+	</div>
+</section>
+{% endif %}
+
+{% if page.description1.title != nil or page.description1.text != nil %}
+<!-- Description -->
+<section class="section section-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<div class="p-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.description1.title }}</div>
+				<div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+					{{ page.description1.text }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+
+<!-- Section Gallery -->
+<section class="section section-inner">
+	<div class="container">
+
+		<div class="row m-gallery">
+			{% for image in page.gallery %}
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="works-item">
+					<div class="image scrolla-element-anim-1 scroll-animate" data-animate="active">
+						<div class="img">
+							<a href="{{ image | relative_url }}" class="has-popup-image">
+								<img src="{{ image | relative_url }}" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+
+	</div>
+</section>
+
+{% if page.description2.title != nil or page.description2.text != nil %}
+<!-- Description -->
+<section class="section section-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<div class="p-title scrolla-element-anim-1 scroll-animate" data-animate="active">{{ page.description2.title }}</div>
+				<div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+					{{ page.description2.text }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
+
+{% if page.video.id != nil %}
+<!-- Video -->
+<section class="m-video-large">
+	<div class="video">
+		<div class="img js-parallax" style="background-image: url({{ page.video.poster | relative_url }});"></div>
+		<iframe class="js-video-iframe" data-src="https://www.youtube.com/embed/{{ page.video.id }}?showinfo=0&rel=0&autoplay=1"></iframe>
+		<div class="play"></div>
+	</div>
+</section>
+{% endif %}
+
+{% if page.previous.url or page.next.url %}
+<!-- Navigation -->
+<section class="m-page-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="h-titles h-navs">
+					{% if page.next.url %}
+					<a href="{{ page.next.url | relative_url }}">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-animate="active">
+							{{ ui_text.next_project }}
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							{{ page.next.title }}
+						</span>
+					</a>
+					{% else %}
+					<a href="{{ page.previous.url | relative_url }}">
+						<span class="nav-arrow scrolla-element-anim-1 scroll-animate" data-animate="active">
+							{{ ui_text.prev_project }}
+						</span>
+						<span class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">
+							{{ page.previous.title }}
+						</span>
+					</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}

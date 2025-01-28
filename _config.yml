@@ -1,3 +1,13 @@
+# ----------------------------------------------------
+#
+#	Ober - CV Resume & Personal Portfolio Jekyll Theme
+#	Version: 1.0
+#	Author: bslthemes
+#	Author URL: http://themeforest.net/user/bslthemes
+#	Copyright © Ober by bslthemes. All Rights Reserved.
+#
+# ----------------------------------------------------
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -8,7 +18,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,281 +28,71 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sliim - Personal Portfolio
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# basic settings
+title: "Ober - CV Resume & Personal Portfolio Jekyll Theme"
+email: "your-email@example.com"
+description: "Jekyll Resume / CV / vCard / Portfolio and Personal Portfolio by bslthemes"
+author: "Admin"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+date_format: "%d %B %Y"
 
+# paginations & permalinks
+paginate: 6
+paginate_path: "/blog/page:num/"
+permalink: pretty
+
+# disqus comments
+disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
+disqus_shortname: "glitche-jekyll-theme" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+
+# formsubmit.io
+formsubmit_email: "beshleyweb@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
+
+# collections
+collections:
+  works:
+    output: true
+    permalink: /:collection/:name
+
+
+# archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Build settings
 plugins:
-  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-algolia
-# Excluded items can be processed by explicitly listing the directories or
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
 
-########################################################
-################# paginate: ###########################
-########################################################
-#https://jekyllrb.com/docs/pagination/
-paginate: 5
-paginate_path: "/blog/page:num/"
-permalink: /:title:output_ext
+sass:
+  style: compressed
 
-#########################################################
-############# mange contact form for static site ########
-#########################################################
-# or https://jekyllrb.com/resources/
-formspree_id: 'xqkwpnpz' #https://formspree.io/
-
-#########################################################
-############# dark verion of this template       ########
-#########################################################
-is_dark: true # default: false | false, true
-
-#########################################################
-#############      change heros       ########
-#########################################################
-# change home card heros
-hero: image # default: image | image | video, animated
-
-#########################################################
-#############      man menus or navigation       ########
-#########################################################
-navigation:
-  - name: "home"
-    link: "#home"
-    icon: "home"
-  - name: "about"
-    link: "#about"
-    icon: "article"
-  - name: "portfolio"
-    link: "#work"
-    icon: "cases"
-  - name: "contact"
-    link: "#contact"
-    icon: "email"
-  - name: "blog"
-    link: "#blog"
-    icon: "topic"
-
-#########################################################
-#############            ui content              ########
-#########################################################
-home:
-  athor_name: 'hi ! i’m<span> Daniel.</span>'
-  description: "I'm a Freelance UI/UX Designer and Developer based in London, England."
-  button_text: 'more about me'
-  quick_contact_txt: "Let's work together"
-  email: 'contact@daniel.net'
-  phone: '+216 21 184 010 32'
-about:
-  title: "\nabout <span>me</span>\n"
-  author_image: images/man.jpg
-  birthdate : June 1990
-  nationality : British
-  experience : 8 years
-  phone : +34 18 40 10
-  address : London, UK
-  email : daniel@mail.com
-  description: "\nI'm Daniel Martin, british based web designer and front‑end developer living in London focused on crafting clean, creative and user‑friendly experiences, I build beautiful and powerful websites and android applications.\n"
-  download-cv_text: 'download my cv'
-resume:
-  title: 'My resume'
-  experience-text: experience
-  education-text: education
-work:
-  title: "\nmy <span>portfolio</span>\n"
-contact:
-  title: "\nget <span>in touch</span>\n"
-  phone: '+216 21 184 010'
-  email: daniel@mail.com
-  location_on: 'London, England'
-  tagline: 'send me an email'
-  description: "Feel free to get in touch with me. I am always open to discussing new projects or creative ideas."
-blog:
-  title: "\nlatest <span>posts</span>\n"
-
-#########################################################
-#############        experiences history         ########
-#########################################################
-experiences:
-  - title: Web Developer
-    date: 2018 - now
-    company: Adobe
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Designer
-    date: 2014 - 2018
-    company: Twitter
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Consultant
-    date: 2006 - 2014
-    company: Facebook
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Professor
-    date: 2010 - 2014
-    company: Envato
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Engineer
-    date: 2006 - 2010
-    company: Google
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Writer
-    date: 2006 - 2010
-    company: IBM
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-  - title: Internship
-    date: 2005 - 2010
-    company: Yahoo
-    description: Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit.
-
-#########################################################
-#############         education history         ########
-#########################################################
-education_history:
-  - title: Engineering Degree
-    date: 2015
-    institute: Oxford University
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: Master Degree
-    date: 2012
-    institute: Moscow University
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: Bachelor Degree
-    date: 2009
-    institute: Tunis High School
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: Tech Degree
-    date: 2007
-    institute: Paris High School
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: College Degree
-    date: 2005
-    institute: Berlin High School
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: High School Degree
-    date: 2003
-    institute: Tokyo High School
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-  - title: School Degree
-    date: 2001
-    institute: Madrid High School
-    description: "Curabitur mollis bibendum luctus. Duis suscipit vitae dui metus sollicitudin sed suscipit."
-
-experience_short_info:
-  experience: 13
-  projects: 56
-  customers: 89 
-
-#########################################################
-#############              skills                ########
-#########################################################
-skills:
-  - name: HTML
-    percent: 80
-  - name: CSS
-    percent: 60
-  - name: WORDPRESS
-    percent: 90
-  - name: JQUERY
-    percent: 70
-  - name: JAVSCRIPT
-    percent: 70
-  - name: PHP
-    percent: 57
-  - name: DRUPAL
-    percent: 80
-  - name: REACT
-    percent: 50
-
-#########################################################
-#############            portfolios              ########
-#########################################################
-portfolios:
-  - image: images/projects/4.jpg
-    category: mobile application
-    title: Autumn Papers
-    size: "960x640"
-    description: '<li> <span>Project : </span> <span>mobile application</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/1.jpg
-    category: website design
-    title: Globe
-    size: "793x1080"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/3.jpg
-    category: colored pens
-    title: Photo Shooting
-    size: "718x1080"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/8.jpg
-    category: 3d Object
-    title: woman bag
-    size: "716x1080"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/5.jpg
-    category: After Effect Video
-    title: halloween
-    size: "960x640"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/2.jpg
-    category: Water Project
-    title: Bottle
-    size: "960x1440"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/7.jpg
-    category: Relaxing chairs
-    title: Sofa
-    size: "960x1440"
-    description: '<li> <span>Project : </span> <span>Relaxing chairs</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-  - image: images/projects/6.jpg
-    category: mobile application
-    title: Beautiful cat
-    size: "960x638"
-    description: '<li> <span>Project : </span> <span>Website Design</span></li><li> <span>Client : </span> <span>Envato</span></li><li> <span>Langages : </span> <span>html, css, js</span></li><li> <span>Duration : </span> <span>3 months</span></li><li> <span>Bugdet : </span> <span>$33000</span></li>'
-    url: "#"
-
-
-#########################################################
-#############           socials links            ########
-#########################################################
-socials: 
-  - name: facebook
-    link: "#"
-  - name: twitter
-    link: "#"
-  - name: linkedin
-    link: "#"
-  - name: dribbble
-    link: "#"
-  - name: instagram
-    link: "#"
+markdown:  kramdown

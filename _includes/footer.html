@@ -1,0 +1,40 @@
+{% assign content = site.data.settings['footer'] %}
+{% assign social = site.data.settings['social'] %}
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer__builder">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-left">
+
+          <!-- social -->
+          <div class="social-links scrolla-element-anim-1 scroll-animate" data-animate="active">
+            {% for link in social %}
+            <a target="_blank" rel="nofollow" href="{{ link.url }}" title="{{ link.title }}">
+              <i aria-hidden="true" class="{{ link.icon }}"></i>
+            </a>
+            {% endfor %}
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-center">
+          <div class="copyright-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+            {{ 'now' | date: "%Y" }}
+            {{ content.copyright }}
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 align-right">
+          <div class="copyright-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+            {{ content.developer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- cursor -->
+<div class="cursor"></div>

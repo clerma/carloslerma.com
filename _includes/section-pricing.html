@@ -1,0 +1,48 @@
+{% assign content = site.data.content['pricing'] %}
+
+<section class="section" id="pricing-section">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="m-titles">
+      <h2 class="m-title splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">
+        {{ content.title }}
+      </h2>
+    </div>
+
+    <div class="row row-custom">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 vertical-line">
+
+        <!-- Description -->
+        <div class="text scrolla-element-anim-1 scroll-animate" data-animate="active">
+          {{ content.text }}
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing-items row">
+      {% for item in content.items %}
+      <div class="pricing-col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        <div class="pricing-item scrolla-element-anim-1 scroll-animate" data-animate="active">
+          <div class="title">{{ item.name }}</div>
+          <div class="subtitle">{{ item.subname }}</div>
+          <div class="price">{{ item.price }}</div>
+          <div class="text">
+            <ul>
+              {% for list in item.list %}
+              <li>{{ list.value }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <a href="{{ item.link | relative_url }}" class="btn">{{ item.button }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

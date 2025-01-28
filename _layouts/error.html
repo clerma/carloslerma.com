@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<div class="background-bg background-bg-inner">
+  <div class="background-filter">
+    <div class="background-img"></div>
+  </div>
+</div>
+
+<div class="parallax-container">
+    <div class="container d-flex text-center align-items-center justify-content-center error-page">
+        <div>
+	        <div class="error-page__num">{{ page.title }}</div>
+	         <h3 class="title title--h5 mb-3">{{ page.subtitle }}</h3>
+	         <p class="description">{{ page.content }}</p>
+		   </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+# Navigation configuration file
+##
+### to add or remove menu item
+### param "title" - Menu item name
+### param "url" - Menu item url
+### param "parent" - set "1" for enable submenu and "childs" param
+
+main:
+  # About
+  - title: "About"
+    url: "#about-section"
+    parent: 0
+
+  # Resume
+  - title: "Resume"
+    url: "#resume-section"
+    parent: 0
+
+  # Works
+  - title: "Works"
+    url: "#works-section"
+    parent: 0
+
+  # Pricing
+  - title: "Pricing"
+    url: "#pricing-section"
+    parent: 0
+
+  # Blog
+  - title: "Blog"
+    url: "#blog-section"
+    parent: 0
+
+  # Contact
+  - title: "Contact"
+    url: "#contact-section"
+    parent: 0
+
+  # Additional Pages
+  - title: "Pages"
+    url: ""
+    parent: 1
+    childs:
+        - title: "Blog List"
+          url: "blog/"
+
+        - title: "Works List"
+          url: "works/"
