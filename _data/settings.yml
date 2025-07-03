@@ -2,7 +2,7 @@ settings:
   skin: dark
 preloader:
   logo:
-    image: assets/img/ober_logo.png
+    image: /uploads/ober-logo.png
     alt: ''
 header:
   logo:
