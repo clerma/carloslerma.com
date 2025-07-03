@@ -159,26 +159,24 @@ pricing:
 testimonials:
   items:
     - image: assets/img/team3.jpg
-      name: Jennifer Smith
-      role: CEO &amp; Founder
+      name:
+      role: Client, Accolades I.T.
       text: >-
-        <p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum,
-        velit enim finibus mauris, in volutpat arcu magna ac metus. Sed
-        condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>
+        <p>Carlos has a heart for excellence in everything he does—from
+        capturing unforgettable moments to building beautiful, functional web
+        experiences.</p>
     - image: assets/img/team3.jpg
-      name: James Green
-      role: Art Director
+      name: Bride
+      role: Ohh Snap Photo Booth
       text: >-
-        <p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum,
-        velit enim finibus mauris, in volutpat arcu magna ac metus. Sed
-        condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>
+        <p>Our event wouldn’t have been the same without Ohh Snap. The design,
+        the execution, and the energy—top notch.</p>
     - image: assets/img/team3.jpg
-      name: Joseph Mackey
-      role: Architect
+      name:
+      role: Photography Client
       text: >-
-        <p>Sed vel mattis dolor. Vestibulum gravida, dolor vel dapibus bibendum,
-        velit enim finibus mauris, in volutpat arcu magna ac metus. Sed
-        condimentum, erat vel sodales pharetra, ligula massa maximus dolor</p>
+        <p>Carlos and Ashley made us feel so at ease on our wedding day. The
+        photos are stunning, but the experience was even better.</p>
 clients:
   title: My Clients
   text: >-
