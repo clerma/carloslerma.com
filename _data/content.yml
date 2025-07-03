@@ -24,25 +24,37 @@ about:
     alt: ''
 resume:
   title: My Resume
-  text: ' <p> Talented UX designer with 7+ years of experience, seeking to elevate UI/UX at ABC, Inc. As Lead UI/UX Head completed project before dead line. ittis augue, id sollicitudin justo tristique ut. Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros. Donec euism od leo um, at pellentesque velituis a congue sem. </p> '
+  text: ' <p> With over 18 years of experience across creative, technical, and entrepreneurial fields, I bring a unique blend of design thinking and operational strategy to every project I touch. I currently serve as the Chief Operating Officer and full-stack developer at Accolades I.T. Consulting, where I lead web and mobile development initiatives for a wide range of clients. I''m also the founder and owner of multiple businesses including a community-focused coffee shop (Java Square), a high-end photo booth company (Ohh Snap Booth), and a wedding photography studio (Carlos + Ashley Photography). My background includes roles in media production, graphic design, and leadership within a multi-campus church, giving me a well-rounded approach to storytelling, systems, and service.</p> '
   skills:
     title: Skills
     items:
       - label: Photoshop
         dots: '9'
         value: '90'
-      - label: WordPress
-        dots: '6'
-        value: '60'
+      - label: Illustrator
+        dots: '8'
+        value: '80'
+      - label: Lightroom
+        dots: '9'
+        value: '90'
       - label: HTML
         dots: '8'
         value: '80'
+      - label: Jekyll
+        dots: '9'
+        value: '90'
       - label: Java
         dots: '5'
         value: '50'
-      - label: jQuery
-        dots: '7'
-        value: '70'
+      - label: Django
+        dots: '6'
+        value: '60'
+      - label: React
+        dots: '5'
+        value: '50'
+      - label: WordPress
+        dots: '5'
+        value: '50'
   services:
     title: Services
     items:
@@ -80,9 +92,6 @@ resume:
         - date: 2010 - 2012
           name: Master in Graphic
           text: New York University
-        - date: 2006 - 2009
-          name: Bachelors of FineArt
-          text: New York University
     - title: AWARDS
       items:
         - date: 2016 - awwwards
@@ -118,8 +127,7 @@ resume:
             leo lectus.</p>
   button:
     text: Download CV
-    link: >-
-      https://bslthemes.site/ober/wp-content/uploads/2021/12/Jacky-Smith-Resume.pdf
+    link:
 pricing:
   title: Pricing Plans
   text: >-
