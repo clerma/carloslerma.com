@@ -76,7 +76,7 @@ resume:
           identity and message.</p>
         button:
         link:
-      - icon: fab fa-adversal
+      - icon: fab fa-iamge
         name: Photography & Visual Storytelling
         text: >-
           <p>Specializing in weddings, lifestyle, and branded content, I capture
@@ -84,7 +84,7 @@ resume:
           I’ll help tell your story through intentional, heartfelt imagery.</p>
         button:
         link:
-      - icon: fas fa-people-arrow
+      - icon: fas fa-people-arrows
         name: Creative Consulting (Technical to Operational)
         text: >-
           <p>Need a second brain on your next big idea? I consult on everything
