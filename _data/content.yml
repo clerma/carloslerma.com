@@ -194,15 +194,9 @@ clients:
 contacts:
   title: Contact Me
   list:
-    - label: Phone
-      icon: fas fa-phone
-      value: +1 023-456-7800
     - label: Email
       icon: fas fa-at
-      value: hi.ober@bslthemes.com
-    - label: Address
-      icon: fas fa-location-arrow
-      value: 43rd Street River Point NY 1023
+      value: me@carloslerma.com
 blog:
   title: My Blog
   text: >-
