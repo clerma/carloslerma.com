@@ -20,7 +20,7 @@ about:
     text: Contact Me
     link: '#contact-section'
   signature:
-    image: assets/img/signature.png
+    image:
     alt: ''
 resume:
   title: My Resume
