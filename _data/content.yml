@@ -59,33 +59,41 @@ resume:
     title: Services
     items:
       - icon: fab fa-chrome
-        name: Web development
+        name: Web & App Development
         text: >-
-          <p>Modern and mobile-ready website that will help you reach all of
-          your marketing.</p>
-        button: order now
-        link: '#contact-section'
+          <p>Custom websites and mobile apps tailored to your brand, audience,
+          and goals—designed and built from the ground up with scalability and
+          usability in mind. From idea to deployment, I help bring digital
+          visions to life.</p>
+        button:
+        link:
       - icon: fab fa-soundcloud
-        name: Music writing
+        name: Brand & Creative Consulting
         text: >-
-          <p>Music copying, writing, creating, transcription and composition
-          services.</p>
-        button: order now
-        link: '#contact-section'
+          <p>Need clarity on your brand or help making things look and feel
+          right? I offer creative direction, graphic design, and marketing
+          insight to help businesses and individuals sharpen their visual
+          identity and message.</p>
+        button:
+        link:
       - icon: fab fa-adversal
-        name: Advetising
+        name: Photography & Visual Storytelling
         text: >-
-          <p>Advertising services include television, radio, print, mail, and
-          web apps.</p>
-        button: order now
-        link: '#contact-section'
+          <p>Specializing in weddings, lifestyle, and branded content, I capture
+          moments that matter. Whether it’s for your family, event, or brand,
+          I’ll help tell your story through intentional, heartfelt imagery.</p>
+        button:
+        link:
       - icon: fas fa-gamepad
-        name: Game Development
+        name: Creative Consulting (Technical to Operational)
         text: >-
-          <p>Developing memorable and unique mobile android, ios and video
-          games.</p>
-        button: order now
-        link: '#contact-section'
+          <p>Need a second brain on your next big idea? I consult on everything
+          from marketing strategy and team workflows to systems, tools, and
+          automation. With experience across design, tech, and operations, I
+          help streamline the creative process and unlock solutions that
+          work.</p>
+        button:
+        link:
   history1:
     - title: EDUCATION
       items:
