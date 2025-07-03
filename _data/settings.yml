@@ -1,52 +1,32 @@
-# Theme Settings Configuration File
-##
-### use settings.yml file for configure colors, ui, rtl, sidebar, animation options
-
-### Main Settings
 settings:
-  skin: "light" # select initial sking option: "light" or "dark"
-
-### Preloader
+  skin: dark
 preloader:
   logo:
-    image: "assets/img/ober_logo.png"
-    alt: ""
-
-### Header
+    image: assets/img/ober_logo.png
+    alt: ''
 header:
   logo:
-    image: "assets/img/ober_logo.png"
-    alt: "Joé Wilson"
-
-### Social
+    image: assets/img/ober_logo.png
+    alt: Joé Wilson
 social:
-  - name: "Facebook"
-    icon: "fab fa-dribbble"
-    url: "http://facebook.com/carlosjlerma"
-
-  - name: "Twitter"
-    icon: "fab fa-twitter"
-    url: "http://twitter.com/carlosjlerma"
-
-  - name: "Instagram"
-    icon: "fab fa-instagram"
-    url: "http://instagram.com/cjlerma"
-
-### Footer
+  - name: Facebook
+    icon: fab fa-dribbble
+    url: http://facebook.com/carlosjlerma
+  - name: Twitter
+    icon: fab fa-twitter
+    url: http://twitter.com/carlosjlerma
+  - name: Instagram
+    icon: fab fa-instagram
+    url: http://instagram.com/cjlerma
 footer:
-  copyright: "Carlos Lerma. All Rights Reserved"
-
-### Portfolio Filters Settings
+  copyright: Carlos Lerma. All Rights Reserved
 portfolio:
   filters:
-    - name: "UI UX Design"
-      slug: "ui-ux-design"
-
-    - name: "Photography"
-      slug: "photography"
-
-    - name: "Development"
-      slug: "development"
-
-    - name: "Branding"
-      slug: "branding"
+    - name: UI UX Design
+      slug: ui-ux-design
+    - name: Photography
+      slug: photography
+    - name: Development
+      slug: development
+    - name: Branding
+      slug: branding
