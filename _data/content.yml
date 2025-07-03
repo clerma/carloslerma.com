@@ -67,7 +67,7 @@ resume:
           visions to life.</p>
         button:
         link:
-      - icon: fab fa-paintbrush-pencil
+      - icon: fa fa-paintbrush-pencil
         name: Brand & Creative Consulting
         text: >-
           <p>Need clarity on your brand or help making things look and feel
@@ -76,7 +76,7 @@ resume:
           identity and message.</p>
         button:
         link:
-      - icon: fab fa-image
+      - icon: fa fa-image
         name: Photography & Visual Storytelling
         text: >-
           <p>Specializing in weddings, lifestyle, and branded content, I capture
