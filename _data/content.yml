@@ -16,9 +16,6 @@ about:
     - label: Happy <br>Clients
       icon: far fa-smile-beam
       value: '65'
-    - label: Awards <br>Won
-      icon: far fa-gem
-      value: '18'
   button:
     text: Contact Me
     link: '#contact-section'
