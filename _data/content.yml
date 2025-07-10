@@ -201,8 +201,9 @@ testimonials:
 clients:
   title: My Clients
   text: >-
-    <p>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam
-    ut aliquet felis, sit amet imperdiet felis.</p>
+    <p>I’ve had the honor of working with incredible clients across weddings,
+    businesses, churches, and community events. Here’s a look at the people and
+    brands I’ve been proud to serve.</p>
   items:
     - image: assets/img/brands/brand1.png
       title: bslthemes
