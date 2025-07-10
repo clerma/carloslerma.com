@@ -221,8 +221,9 @@ contacts:
 blog:
   title: My Blog
   text: >-
-    <p>Suspendisse potenti. Sed egestas eros eu libero posuere ultrices. Nullam
-    ut aliquet felis, sit amet imperdiet felis.</p>
+    <p>Welcome to the blog—a space where I share insights from behind the lens,
+    lessons from the field, and stories from life, business, and everything in
+    between.</p>
   button: View Blog
   link: blog/
 portfolio:
