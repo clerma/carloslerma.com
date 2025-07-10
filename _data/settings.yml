@@ -7,7 +7,7 @@ preloader:
 header:
   logo:
     image: assets/img/ober_logo.png
-    alt: Joé Wilson
+    alt: Carlos Lerma
 social:
   - name: Facebook
     icon: fab fa-facebook
