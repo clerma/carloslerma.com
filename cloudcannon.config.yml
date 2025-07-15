@@ -1,7 +1,8 @@
+_schema: _schema
 paths:
   uploads: uploads
-  dam_uploads: ''
   static: ''
+  dam_uploads: ''
   dam_static: ''
   collections: ''
   data: _data
@@ -10,8 +11,8 @@ paths:
 collections_config:
   posts:
     path: _posts
-    output: true
     icon: notes
+    output: true
     create:
       path: >-
         [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
@@ -20,9 +21,9 @@ collections_config:
     disable_file_actions: false
   pages:
     path: ''
+    icon: notes
     output: true
     filter: strict
-    icon: notes
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -38,6 +39,9 @@ _inputs:
     options:
       allow_create: true
       empty_type: array
+    cascade: true
+  Text:
+    type: html
     cascade: true
 _select_data:
   navigation:
@@ -321,7 +325,4 @@ _select_data:
       tag: /tag/:name/
       category: /category/:name/
   archives: []
-_structures: {}
-_editables: {}
-data_config: {}
 timezone: Etc/UTC
