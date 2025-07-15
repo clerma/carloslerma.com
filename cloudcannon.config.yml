@@ -40,7 +40,7 @@ _inputs:
       allow_create: true
       empty_type: array
     cascade: true
-  Text:
+  text:
     type: html
     cascade: true
 _select_data:
