@@ -97,64 +97,97 @@ resume:
   history1:
     - title: EDUCATION
       items:
-        - date: 2010 - 2012
-          name: Self-Taught & Industry-Tested
+        - date: ‘’
+          name: Austin Community College
           text: >-
-            My education has come from years of hands-on experience, late nights
-            learning new tools, and the real-world demands of running businesses
-            across design, development, photography, and operations. I’ve built
-            my career not in classrooms but through projects, problem-solving,
-            and perseverance.
-    - title: AWARDS
+            Studied core principles of design, technology, and communication.
+            The majority of my growth has come through hands-on experience—late
+            nights learning new tools and the real-world demands of building and
+            running businesses across design, development, photography, and
+            hospitality.
+    - title: ABOUT
       items:
-        - date: 2016 - awwwards
-          name: Site of the Day
+        - date: ‘’
+          name: Full Stack Developer, Graphic Designer & Photographer
           text: >-
-            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod
-            leo lectus.</p>
-        - date: 2015 - designnominees
-          name: Site of the Week
-          text: >-
-            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod
-            leo lectus.</p>
+            Versed in Photoshop, Illustrator, Indesign, Lightroom & FinalCut.
+            Currently expanding into Cinema 4D and After Effects. Passionate
+            about using technology and design to help others build meaningful
+            brands and experiences.
   history2:
     - title: EXPERIENCE
       items:
-        - date: 2014 - Present
-          name: Soft Tech Inc.
-          subname: UI Head &amp; Manager
+        - date: Sep 2011 - Present
+          name: Accolades IT Consulting
+          subname: Chief Operating Officer &amp; Partner
           text: >-
-            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod
-            leo lectus.</p>
-        - date: 2010 - 2014
-          name: Kana Design Studio
-          subname: UI / UX Specialist
+            <p>Leading web and mobile development initiatives for a wide range
+            of clients across Louisiana and beyond. Services include website
+            design, web application development, custom software, and CMS
+            solutions.</p>
+        - date: Jan 2013 - Present
+          name: Carlos &amp; Ashley Photography
+          subname: Owner
           text: >-
-            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod
-            leo lectus.</p>
-        - date: 2009 - 2010
-          name: Paperart
-          subname: Graphic Designer
+            <p>Louisiana-based wedding, engagement, portrait, and lifestyle
+            photography studio. Telling couples’ love stories through
+            intentional, heartfelt imagery in Lafayette and surrounding
+            areas.</p>
+        - date: Mar 2014 - Present
+          name: Ohh Snap! Photo Booth Rentals
+          subname: Owner
           text: >-
-            <p>Euismod vel bibendum ultrices, fringilla vel eros, donec euismod
-            leo lectus.</p>
+            <p>Photo booth rental company serving Lafayette, LA and Houston, TX.
+            A modern, high-energy alternative to the traditional photo booth—
+            designed to elevate events of all kinds.</p>
+        - date: Nov 2017 - Present
+          name: Prop Box
+          subname: Owner
+          text: >-
+            <p>Online store specializing in pre-made and custom photo booth
+            props. High-quality designs and materials crafted to complement any
+            event aesthetic.</p>
+        - date: Jun 2018 - Present
+          name: Java Square Cafe
+          subname: Owner
+          text: >-
+            <p>A community-focused full-service coffee shop in Lafayette, LA
+            serving espresso drinks, lattes, cappuccinos, blended iced coffees,
+            milkshakes, lemonades, and smoothies—alongside sandwiches, soups,
+            and muffins.</p>
+        - date: Nov 2006 - Sep 2011
+          name: Our Savior's Church
+          subname: Graphics &amp; Photography
+          text: >-
+            <p>Served the church media team for nearly 5 years, producing
+            graphics and photography for a multi-campus church in Lafayette,
+            Louisiana. This role launched my creative career and shaped my
+            approach to visual storytelling.</p>
+        - date: 2003 - 2004
+          name: Texas Coffee Traders
+          subname: Accounts Payable / Sales Accounting Specialist
+          text: >-
+            <p>Managed accounts payable and sales accounting operations for a
+            specialty coffee trading company in Austin, Texas. An early role
+            that blended operational precision with a growing love for
+            coffee.</p>
   button:
     text: Download CV
     link:
 pricing:
   title: Pricing Plans
   text: >-
-    <p>Are you interested to work with me ? Here are my price list for design
-    related work. Lets talk about project !</p>
+    <p>Interested in working together? Here's a general overview of how I
+    structure my work. Every project is different—let's talk about yours.</p>
   items:
     - name: Full Time
       subname: Available for Full Time
       price: $1200
       list:
         - value: Web Development
-        - value: Advertising
-        - value: Web Development
+        - value: Brand & Creative Direction
         - value: Photography
+        - value: Consulting
       button: Hire Me
       link: '#contact-section'
     - name: Project Wise
@@ -162,19 +195,19 @@ pricing:
       price: $400
       list:
         - value: Web Development
-        - value: Advertising
-        - value: Web Development
+        - value: Brand & Creative Direction
         - value: Photography
+        - value: Consulting
       button: Hire Me
       link: '#contact-section'
-    - name: Hourley
-      subname: Available for Hourley Basis
+    - name: Hourly
+      subname: Available for Hourly Basis
       price: $30
       list:
         - value: Web Development
-        - value: Advertising
-        - value: Web Development
+        - value: Brand & Creative Direction
         - value: Photography
+        - value: Consulting
       button: Hire Me
       link: '#contact-section'
 testimonials:
@@ -205,14 +238,14 @@ clients:
     businesses, churches, and community events. Here’s a look at the people and
     brands I’ve been proud to serve.</p>
   items:
-    - image: assets/img/brands/brand1.png
-      title: bslthemes
-    - image: assets/img/brands/brand2.png
-      title: bslthemes
-    - image: assets/img/brands/brand3.png
-      title: bslthemes
-    - image: assets/img/brands/brand4.png
-      title: bslthemes
+    - image: assets/img/brands/accolades-it.png
+      title: Accolades IT Consulting
+    - image: assets/img/brands/ohh-snap.png
+      title: Ohh Snap! Photo Booth
+    - image: assets/img/brands/java-square.png
+      title: Java Square Cafe
+    - image: assets/img/brands/carlos-ashley.png
+      title: Carlos & Ashley Photography
 contacts:
   title: Contact Me
   list:
